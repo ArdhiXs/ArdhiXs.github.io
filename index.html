@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags --> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Regal Admin</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+
+  <link href="https://ardhixs.herokuapp.com/css/fontawesome.min.css" rel="stylesheet">
+  <link href="https://ardhixs.herokuapp.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search Projects.." aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown d-lg-flex d-none">
+                <button type="button" class="btn btn-info font-weight-bold">+ Create New</button>
+            </li>
+          <li class="nav-item dropdown d-flex">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-air-play mx-0 fa-shake"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="images/icon-boostrap.png" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Themplate For
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    bootstrapdash.com
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="images/apple-touch-icon.png" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal">Icon For
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    fontawesome.com
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                    <img src="images/favicon.ico" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-normal"> Recode Themplate For
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    @ardhixs_
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-flex mr-4 ">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-cog fa-spin"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Settings</p>
+              <a class="dropdown-item preview-item">               
+                  <i class="icon-head"></i> Profile
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-4 d-lg-flex d-none">
+            <a class="nav-link count-indicatord-flex align-item s-center justify-content-center" href="#">
+              <i class="icon-grid"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu fa-beat"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="user-profile">
+          <div class="user-image">
+            <img src="images/faces/face28.png">
+          </div>
+          <div class="user-name">
+              ArdhiXs
+          </div>
+          <div class="user-designation">
+              Developer
+          </div>
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-box menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="fas fa-folder menu-icon fa-beat"></i>
+              <span class="menu-title">MEDIA API</span>
+              <!--<i class="menu-arrow"></i>-->
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/api/ytv?url=ENTER_URL_HERE">Ytmp4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/ytv?url=ENTER_URL_HERE">Ytmp3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/mediafire?url=ENTER_URL_HERE">Mediafire</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/stalkgithub?users=ArdhiXs">Github Stalker</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#Maker-ArdhiXs" aria-expanded="false" aria-controls="Maker-ArdhiXs">
+              <i class="fas fa-edit menu-icon fa-beat"></i>
+              <span class="menu-title">MAKER API</span>
+              <!--<i class="menu-arrow"></i>-->
+            </a>
+            <div class="collapse" id="Maker-ArdhiXs">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/ttp?text=HAI KAK&img=https://i.ibb.co/rd2zkdF/ardhixs-black.png">Text To Png</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/nulis?text=Ardhi%20Ganteng">Nulis Kertas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/wanted?picurl=https://ardhixsquerpants.000webhostapp.com/File/ardhi-xsquerpants/Img/slide1.jpg">Wanted</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/hitler?img=https://ardhixsquerpants.000webhostapp.com/File/ardhi-xsquerpants/Img/slide1.jpg">Hitler</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/news?title=SEORANG WANITA BUGIL&img=https://i.waifu.pics/6H0kz7j.jpg">News CNN</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/newskompas?title=Apa Elu Tega&img=https://i.waifu.pics/6H0kz7j.jpg">News Kompas (Koran)</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/maker/yasin?nama=Kampret&lahir=20-01-3004&wafat=01-06-1991&img=https://i.waifu.pics/BVBLSVA.jpg">Sampul Yasin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="fas fa-fw fa-book menu-icon fa-beat"></i>
+              <span class="menu-title">RANDOM API</span>
+             <!-- <i class="menu-arrow"></i> -->
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/api/random/asmaulhusna"> Asmaul Husna </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/randomquotes"> Quotes </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/random/darkjokes"> Dark Jokes </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/random/bokepp"> Bokep </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/nekonime"> Nekonime </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/hentai">Hentai</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/trapnime"> Trapnime </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/blowjob">BlowJob</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#Other-ArdhiXs" aria-expanded="false" aria-controls="Other-ArdhiXs">
+              <i class="fab fa-fw fa-wpforms menu-icon fa-beat"></i>
+              <span class="menu-title">OTHER API</span>
+              <!--<i class="menu-arrow"></i>-->
+            </a>
+            <div class="collapse" id="Other-ArdhiXs">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/api/infogempa">Info Gempa</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/wiki?q=Vagina">WikiPedia</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/chord?q=mantan">Chord</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/lirik?search=mantan">Lirik Lagu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/kuso?q=kanojo+okarishimasu">Kusonime</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/spamcall?no=88294052009">SpamCall</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/translate?kata=hello%20my%20name%20is%20ardi">Translate En To Id</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/vokal/hilih?text=Ardhi%20Ganz">Hilih</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/vokal/halah?text=Ardhi%20Ganz">Halah</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/vokal/huluh?text=Ardhi%20Ganz">Huluh</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/vokal/heleh?text=Ardhi%20Ganz">Heleh</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/api/vokal/holoh?text=Ardhi%20Ganz">Holoh</a></li>
+              </ul>
+            </div>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" href="pages/icons/feather-icons.html">
+              <i class="icon-help menu-icon"></i>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs/documentation.html">
+              <i class="icon-book menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul> -->
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-sm-12 mb-4 mb-xl-0">
+              <h4 class="font-weight-bold text-dark">Hi, Welcome to ArdhiXs Api!</h4>
+              <p class="font-weight-normal mb-2 text-muted" id="tanggalwaktu">APRIL 1, 2019</p>
+              <script>
+var tw = new Date();
+if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+else (a=tw.getTime());
+tw.setTime(a);
+var tahun= tw.getFullYear ();
+var hari= tw.getDay ();
+var bulan= tw.getMonth ();
+var tanggal= tw.getDate ();
+var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+</script>
+            </div>
+          </div>
+         <!-- <div class="row mt-3">
+            <div class="col-xl-3 flex-column d-flex grid-margin stretch-card">
+              <div class="row flex-grow">
+                <div class="col-sm-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">Customers</h4>
+                          <p>23% increase in conversion</p>
+                          <h4 class="text-dark font-weight-bold mb-2">43,981</h4>
+                          <canvas id="customers"></canvas>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">Orders</h4>
+                          <p>6% decrease in earnings</p>
+                          <h4 class="text-dark font-weight-bold mb-2">55,543</h4>
+                          <canvas id="orders"></canvas>
+                      </div>
+                    </div>
+               </div>
+              </div>
+            </div>
+            <div class="col-xl-9 d-flex grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title">Website Audience Metrics</h4>
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit amet cumque cupiditate</p>
+                        </div>
+                        <div class="col-lg-7">
+                          <div class="chart-legends d-lg-block d-none" id="chart-legends"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12">
+                              <canvas id="web-audience-metrics-satacked" class="mt-3"></canvas>
+                          </div>
+                      </div>
+                        
+                    </div>
+                  </div>
+            </div>
+          </div> 
+                      <div id="chart-legends-market-trend" class="chart-legends mt-1">
+                      </div>
+                      <div class="row mt-2 mb-2">
+                        <div class="col-6">
+                          <div class="text-small"><span class="text-success">18.2%</span> higher </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="text-small"><span class="text-danger">0.7%</span> higher </div>
+                        </div>
+                      </div>
+                      <div class="marketTrends mt-4">
+                        <canvas id="marketTrendssatacked"></canvas>
+                      </div>
+                        
+                    </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Traffic Sources</h4>
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div class="d-flex justify-content-between mt-2 text-dark mb-2">
+                              <div><span class="font-weight-bold">4453</span> Leads</div>
+                              <div>Goal: 2000</div>
+                            </div>
+                        <div class="progress progress-md grouped mb-2">
+                          <div class="progress-bar  bg-danger" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar  bg-primary" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-light" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="traffic-source-legend">
+                          <div class="d-flex justify-content-between mb-1 mt-2">
+                            <div class="font-weight-bold">SOURCE</div>
+                            <div class="font-weight-bold">TOTAL</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-danger"></span>Google Search</div>
+                            <div>30%</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-info"></span>Social Media</div>
+                            <div>20%</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-primary"></span>Referrals</div>
+                            <div>10%</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-warning"></span>Organic Traffic</div>
+                            <div>10%</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-success"></span>Google Search</div>
+                            <div>5%</div>
+                          </div>
+                          <div class="d-flex justify-content-between legend-label">
+                            <div><span class="bg-light"></span>Email Marketing</div>
+                            <div>25%</div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div> -->
+              <div class="col-xl-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title mb-3">INFORMATION</h4>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="text-dark">
+                          <div class="d-flex pb-3 border-bottom justify-content-between">
+                            <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
+                            
+                            
+                            <div class="font-weight-bold mr-sm-4">
+                      
+                    <li>Status : <b style="color: greenyellow;">Online</b></li>
+                    <li>IP addres : <b id="ipaddress"></b></li>
+                    <li>Org : <b id="org"></b></li>
+                    <li>Country : <b id="country"></b></li>
+                    <li>City : <b id="city"></b></li>
+                    <li>Code : <b id="country-code"></b></li>
+                    <li>Currency : <b id="currency"></b></li>
+                    <li>Eid Mubarak : <b id="IdulFitri"></b></li>
+  
+                             <!-- <div class="text-muted font-weight-normal mt-1" id="ipaddress">32 Minutes Ago</div> -->
+                            </div>
+                            <div><h6 class="font-weight-bold text-info ml-sm-2"></h6></div>
+                          </div>
+                          <div class="d-flex pb-3 pt-3 border-bottom justify-content-between">
+                            <div class="mr-3"><i class="mdi mdi-signal-cellular-outline icon-md"></i></div>
+                            <div class="font-weight-bold mr-sm-4"
+                            <div>
+                              <script>
+                  var txt = "";
+                  txt += "<p><b>User-agent :</b> " + navigator.userAgent + "</p>";
+                  txt += "<p><b>Browser CodeName :</b> " + navigator.appCodeName + "</p>";
+                  txt += "<p><b>Browser Name :</b> " + navigator.appName + "</p>";
+                  txt += "<p><b>Cookies Enabled :</b> " + navigator.cookieEnabled + "</p>";
+                  txt += "<p><b>Browser Online :</b> " + navigator.onLine + "</p>";
+                  txt += "<p><b>Platform :</b> " + navigator.platform + "</p>";
+                  document.write(txt)
+												var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 1;
+}
+
+function hijriToString()
+{
+var months = new Array("Muharram","Safar","Rabiul Awwal","Rabiul Tsani","Jumadil Ula","Jumadil Tsani","Rajab","Sya\'ban","Ramadhan","Syawwal","Dzul Qa\'dah","Dzul Hijjah");
+return this.day + " " + months[this.month -1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed() + 1;
+return i;
+}
+
+var tod=new Date();
+var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write("<p><b>Date :</b> " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+document.write(" | " + h.toString() + " H </p> &nbsp;&nbsp;");</script>
+<!-- " + weekday[dow] + " -->
+              </div>
+                              <div></div>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+          </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright &copy; <a href="https://www.instagram.com/ardhixs_/" target="_blank">ArdhiXs</a> 2021 - <script>document.write(new Date().getFullYear())</script>
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- base:js -->
+  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- File Informasion -->
+  <script src="https://ardhixs.herokuapp.com/js/jqueryhtml.js"></script> 
+  <script>
+
+    $(document).ready(function () {
+
+      function eidmubarak() {
+        var countDownDate = new Date("May 2, 2022 23:59:00").getTime();
+        var x = setInterval(function () {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("IdulFitri").innerHTML = days + "Days " + hours + "Hours "
+          //  + minutes + "M " // + seconds + "S";
+
+           // time Programs
+          if (days === 0) {
+            document.getElementById("IdulFitri").innerHTML = hours + "H " + minutes + "M "
+          }
+          if (days === 0 && hours === 0) {
+            document.getElementById("IdulFitri").innerHTML = minutes + "M " 
+             + seconds + "S";
+          } 
+          if (days === 0 && hours === 0 && minutes === 0) {
+            document.getElementById("IdulFitri").innerHTML = seconds + "S";
+          }
+
+          // Timeout
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("IdulFitri").innerHTML = "BERAKHIR";
+          }
+          
+        }, 1000);
+        requestAnimationFrame(eidmubarak);
+      }
+
+      requestAnimationFrame(eidmubarak);
+    });
+  </script>
+  <!-- End Informasion -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
