@@ -117,6 +117,7 @@
 
 .icon-air-play:before {
   content: "\e016";
+  color: #097ef7;
 }
 
 .icon-camera:before {
@@ -145,6 +146,7 @@
 
 .icon-cog:before {
   content: "\e023";
+  color: #d5fb08;
 }
 
 .icon-heart:before {
