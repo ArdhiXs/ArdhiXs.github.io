@@ -535,6 +535,7 @@
 
 .icon-menu:before {
   content: "\e120";
+  color: #08f2fd;
 }
 
 .icon-archive:before {
