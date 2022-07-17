@@ -22089,12 +22089,12 @@ dl li {
 }
 
 .navbar .navbar-menu-wrapper {
-  background: #fff;
+  background: #030303;
   transition: width 0.25s ease;
   -webkit-transition: width 0.25s ease;
   -moz-transition: width 0.25s ease;
   -ms-transition: width 0.25s ease;
-  color: #000000;
+  color: #fff;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   width: calc(100% - 240px);
