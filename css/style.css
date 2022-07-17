@@ -21753,7 +21753,7 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 60px);
-  background: #ec37fc;
+  background: #3c024a;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   padding: 0;
@@ -22000,7 +22000,7 @@ dl li {
 .sidebar .user-profile {
   margin: 2rem 0;
   text-align: center;
-  color: #ffffff;
+  color: #fcbc07;
   font-weight: bold;
 }
 
@@ -22045,7 +22045,7 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper {
-  background: #ec37fc;
+  background: #3c024a;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
